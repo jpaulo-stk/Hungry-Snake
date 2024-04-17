@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/snake.png" type="snake.img">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a2827f75c.js" crossorigin="anonymous"></script>
+    <title>Snake Hungry</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo2.png" alt="Hungry Snake" title="Hungry Snake">
+            <i id="botao" class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Quem Somos">Quem Somos</a></li>
+                <li><a href="Jogo">Jogo</a></li>
+                <li><a href="Contato">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slider main container -->
+        <div class="swiper banner">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/jogo1.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/c3.jpg" alt=""></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+
+        <section class="descricao">
+            <div class="itens">
+                <img class="itens_img" src="img/maca.png" alt="Maçã Podre" title="Maçã Podre">
+                <div>
+                <h3>Maça Vermelha</h3>
+                <p>A deliciosa e suculenta Maçã Vermelha é o alimento desejado pela Cobra Faminta em sua jornada.
+                    Brilhante e tentadora, esta fruta vermelha aumenta o tamanho da Cobra e impulsiona ela em busca de
+                    sua próxima maçã. Cuidado para não perder de vista enquanto ela serpenteia pelo campo!</p>
+            </div>
+        </div>
+            <div class="itens">
+                <img class="itens_img" src="img/snake.png" alt="Cobra Faminta" title="Cobra Faminta">
+                <div>
+                <h3>Cobra Faminta</h3>
+                <p>A famosa Cobra Faminta é a protagonista deste emocionante jogo clássico. Com sua velocidade e força
+                    de vontade, ela desliza pelo espaço mosaico, com fome para comer todas as Maçãs Vermelhas que
+                    encontra pelo caminho. Controle seus movimentos habilidosamente para evitar colisões e expandir seu
+                    comprimento. Até onde você pode guiar esta serpente faminta?</p>
+                </div>
+            </div>
+            <div class="itens">
+                <img class="itens_img" src="img/maca-podre.png" alt="Maçã Podre" title="Maçã Podre">
+                <div>
+                <h3>Maça Podre</h3>
+                <p>Cuidado com a Maçã Podre! Este fruto podre não é apenas repugnante à vista, mas também representa
+                    perigo para a Cobra Faminta. Se ela se aventurar a consumi-la, sua jornada chegará a um fim
+                    prematuro. Mantenha os olhos bem abertos e evite esta maçã podre e amarelada a todo custo para
+                    manter a aventura da cobra em curso!</p>
+                    </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="infos">
+            <div>
+                <h3>Redes Sociais</h3>
+                <a href="mailto:joaopaulo_bazan@hotmail.com?subject=Duvidas"><i class="fa-solid fa-envelope"></i></a>
+
+                <a href="https://wa.me/5544998030402"><i class="fa-solid fa-phone"></i></a>
+
+                <a href="https://www.instagram.com/joaopaulo_bf_/"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://www.construct.net/en/make-games/free-trial"><i class="fa-solid fa-gear"></i></a>
+            </div>
+        </section>
+
+        <div class="creditos">
+            <P>Desenvolvido por <br> João Paulo &copy;</P>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const botao = document.getElementById('botao')
+        const menu = document.getElementById('menu')
+
+        botao.addEventListener('click', () => {
+            menu.classList.toggle('mostrar')
+            botao.classList.toggle('fa-xmark')
+        })
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 3000,
+            },
+
+        });
+
+        /*    https://modelviewer.dev/    */
+    </script>
+</body>
+
+</html>

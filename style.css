@@ -1,0 +1,21 @@
+@import url('styles/reset.css');
+@import url('styles/header.css');
+@import url('styles/main.css');
+@import url('styles/footer.css');
+
+:root {
+    --verde-escuro:#08aa00;
+    --verde-claro:#0dff00;
+    --vermelho:#772d2d;
+    --branco:#ffffff;
+    --cor-de-fundo:#ebebeb;
+    --cinza-claro:#d9d9d9;
+    --preto:#000000;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+}
