@@ -4606,6 +4606,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.PickLastCreated,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.System.Cnds.IsGroupActive,
@@ -4806,6 +4807,12 @@ self.C3_ExpressionFuncs = [
 			const f1 = p._GetNode(1).GetBoundMethod();
 			const f2 = p._GetNode(2).GetBoundMethod();
 			return () => n0.ExpObject(f1((f2() - 16)));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const f2 = p._GetNode(2).GetBoundMethod();
+			return () => n0.ExpObject(f1((f2() + 16)));
 		},
 		() => 2,
 		p => {
