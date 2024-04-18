@@ -28,8 +28,6 @@ main {
     margin: 22px;
     color: white;
 
-
-
     .itens_img {
         width: 50%;
         background-color: var(--vermelho);
@@ -131,6 +129,16 @@ main {
         flex-direction: row;
         gap: 16px;
         align-items: center;
+        
+        .card_efeito {
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+
+        .itens{     
+            transform: translateZ(20px);
+
+        }
 
         .itens_img {
             width: 90px;
