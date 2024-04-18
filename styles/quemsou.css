@@ -1,0 +1,29 @@
+.banner_quemsou {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+.quemSou {
+    color: var(--vermelho);
+    text-align: center;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px;
+
+}
+
+.text_quemsou {
+    color: var(--vermelho);
+    text-align: center;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 20%;
+}

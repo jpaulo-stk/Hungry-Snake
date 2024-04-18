@@ -1,0 +1,46 @@
+input, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+.mensagem {
+    width: 60%;
+    margin: auto;
+
+    h2 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.submit {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background 0.5s;
+    transform: translateX(0) scale(1);
+    transition: 400ms linear;
+}
+
+.submit:hover, .submit:focus {
+    background-color: var(--vermelho);
+    font-weight: bold;
+    transform: translate(10px) scale(1.1);
+}

@@ -1,0 +1,63 @@
+.texto {
+    color: var(--vermelho);
+    text-align: center;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 22px;
+
+}
+
+.texto2 {
+    color: var(--vermelho);
+    text-align: center;
+    font-family: "inter", sans-serif;
+    font-size: 24px;
+    padding-bottom: 22px;
+    margin: 0 10%;
+}
+
+.texto_pc, .texto2_pc {
+    display: none;
+}
+
+.jogo {
+    display: none;
+}
+
+@media (width >= 1280px) {
+    .texto, .texto2 {
+        display: none;
+
+    }
+
+    .jogo {
+        display: flex;
+        justify-content: center;
+     iframe {
+            width: 700px;
+            height: 300px;
+        }
+    }
+
+    .texto_pc {
+        display: flex;
+        justify-content: center;
+        color: var(--vermelho);
+        font-family: "inter", sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        padding-bottom: 22px;
+    
+    }
+    
+    .texto2_pc {
+        display: flex;
+        color: var(--vermelho);
+        text-align: center;
+        font-family: "inter", sans-serif;   
+        font-size: 24px;
+        padding-bottom: 28px;
+        margin: 0 10%;
+    }
+}

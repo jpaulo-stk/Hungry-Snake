@@ -6,12 +6,17 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+
     img {
         width: 100%;
         max-width: 744px;
         max-height: 418px;
         padding-bottom: 18px;
     }
+}
+
+.btn {
+    display: none;
 }
 
 .descricao {
@@ -21,17 +26,31 @@ main {
     align-items: center;
     flex-direction: column;
     margin: 22px;
+    color: white;
+
+
 
     .itens_img {
-        width: 20%;
-        background-color: var(--cinza-claro);
+        width: 50%;
+        background-color: var(--vermelho);
+    }
+
+    .itens_img2 {
+        width: 50%;
+        background-color: var(--vermelho);
+    }
+
+    .itens_img_snake {
+        width: 50%;
+        background-color: var(--vermelho);
     }
 
     div {
         display: flex;
         flex-direction: column;
         padding: 8px;
-        background-color: var(--cinza-claro);
+        border-radius: 4px;
+        background-color: var(--vermelho);
 
         h3 {
             font-weight: bold;
@@ -40,19 +59,107 @@ main {
         p {
             font-size: 12px;
         }
-}
+    }
+
+    .itens {
+        align-items: center;
+    }
+
 }
 
 .swiper-slide {
     text-align: center;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
     color: var(--branco);
 }
 
-@media (width >= 744) {
+@media (width >=494px) {
     .descricao {
-    display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        margin: 0 100px;
+
+        .itens_img {
+            width: 190px;
+            background-color: var(--vermelho);
+        }
+
+        .itens_img2 {
+            width: 190px;
+            background-color: var(--vermelho);
+        }
+
+        .itens_img_snake {
+            width: 240px;
+            background-color: var(--vermelho);
+        }
+    }
 }
+
+@media (width <= 1280px) {
+    .btn {
+        display: none;
+    }
+}
+
+@media (width >= 1280px) {
+    .btn {
+        margin: 30px;
+        display: flex;
+        background-color: red;
+        padding: 10px;
+        border-radius: 8px;
+        border: 0;
+        margin-top: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .jogo_home {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (width >=790px) {
+    .descricao {
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+
+        .itens_img {
+            width: 90px;
+            background-color: var(--vermelho);
+        }
+
+        .itens_img2 {
+            width: 100px;
+            background-color: var(--vermelho);
+        }
+
+        .itens_img_snake {
+            width: 150px;
+            background-color: var(--vermelho);
+        }
+
+        div {
+            padding: 8px;
+            background-color: var(--vermelho);
+
+            h3 {
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    
 }
